@@ -12,21 +12,15 @@ public class Application02 {
          */
 
         // 5명의 java 점수를 저장할 배열 생성
+        double sum = 0.0, avg = 0.0;
         int[] scores = new int[5];
 
         Scanner sc = new Scanner(System.in);
 
         // 배열의 연속적인 공간이라는 특성을 활용하여 반복문을 써보자.
         for (int i = 0; i < scores.length; i++) {
-            System.out.print((i+1) + "번 째 학생의 점수를 입력해주세요 : ");
+            System.out.print((i + 1) + "번 째 학생의 점수를 입력해주세요 : ");
             scores[i] = sc.nextInt();
-        }
-
-        // 합계와 평균
-        double sum = 0.0, avg = 0.0;
-
-        // 합계란? 모든 베열의 인덱스
-        for (int i = 0; i < scores.length; i++) {
             sum += scores[i];
         }
 
